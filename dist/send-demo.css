@@ -1,0 +1,15 @@
+main{
+    padding-top: 24px;
+}
+table{
+    background-color: white;
+}
+table .icon-check{
+    color: green;
+}
+table .icon-close{
+    color: darkred;
+}
+table .icon-warning-full{
+    color: gray;
+}

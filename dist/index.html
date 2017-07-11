@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Github Dashboard</title>
+  <link rel="icon" href="https://ux.contactlab.com/assets/img/favicon.png">
+  <!-- Pattern Library Global stylesheet -->
+  <link rel="stylesheet" 
+    href="https://cdn.rawgit.com/contactlab/contactlab-ui-components/master/_assets/css/contactlab-pattern.min.css">
+  <!-- Ikonograph v2 -->
+  <link rel="stylesheet" 
+    href="https://cdn.rawgit.com/contactlab/ikonograph/v2.0.0/dist/ikonograph.min.css">
+  <!-- Demo stylesheet-->
+  <link rel="stylesheet" href="./send-demo.css">
+  <!-- WebComponents v0 polyfill -->
+  <script
+    src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/master/webcomponents-lite.js"></script>
+  <!-- Adding Polymer via HTML import -->
+  <link rel="import" href="./polymer.html">
+
+  <!-- Adds the Pattern Library package when the polyfill is loaded 
+  (instant on native supporting browsers) -->
+  <script>
+     window.addEventListener('WebComponentsReady', function(){
+        console.log('WebComponentsReady');
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = "./pattern-library.js";
+        document.body.appendChild(script);
+      });
+  </script>
+
+</head>
+<body> 
+
+  	<main>
+		<h2>Github Dashboard</h2>
+        <x-container>
+            
+        </x-container>
+  	</main>
+  
+</body>
+</html>

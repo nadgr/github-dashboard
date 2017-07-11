@@ -1,0 +1,28 @@
+<!-- Dependencies -->
+
+<!--
+`<card>` is a starting template for new components .
+Basic use
+    <card></card>
+More comments here...
+-->
+<dom-module id="x-card">
+	<template>
+		<style>
+			:host {/*tag stesso*/
+				font-family: verdana;
+			};
+			div {
+				width: 300px;
+				height: auto;
+				border: 1px solid grey;
+				padding: 100px;
+				text-align: center;
+				display: inline-block;
+			}
+		</style>
+		<div>
+			<h2>[[value]]</h2>
+		</div>
+	</template>
+</dom-module>

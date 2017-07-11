@@ -1,0 +1,23 @@
+<!-- Dependencies -->
+
+<!--
+`<filter-container>` is a starting template for new components .
+Basic use
+    <filter-container></filter-container>
+More comments here...
+-->
+<dom-module id="x-filter-container">
+	<template>
+		<style>
+			div {
+				width: 100%;
+				height: auto;
+				border: 1px solid gray;
+				margin-top: 10px;
+			}
+		</style>
+		<div>
+			<slot></slot>
+		</div>
+	</template>
+</dom-module>

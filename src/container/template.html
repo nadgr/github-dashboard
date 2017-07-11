@@ -1,0 +1,29 @@
+<dom-module id="x-container">
+	<template>
+		<style>
+			.size-style{
+				width: 100%;
+				height: auto;
+				font-family: verdana;
+			}
+		</style>
+		<div class="size-style">
+			<x-card-container>
+                <x-card value="[[repos]]"></x-card>
+                <x-card value="[[users]]"></x-card>
+            </x-card-container>
+			<!--<dropdown-clab placeholder="seleziona anno" is="dom-repeat" options="[[arr]]">[[item]]</dropdown-clab>-->
+			<tabs-clab pills labels='["2017", "2016", "2015"]'>
+				<div class="tab-content">
+					<x-repo-info></x-repo-info>
+				</div>
+				<div class="tab-content">
+					<x-repo-info></x-repo-info>
+				</div>
+				<div class="tab-content">
+					<x-repo-info></x-repo-info>
+				</div>
+			</tabs-clab>
+		</div> 
+	</template>
+</dom-module>

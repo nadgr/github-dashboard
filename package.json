@@ -1,0 +1,28 @@
+{
+  "name": "pattern-library-send17",
+  "version": "1.0.0",
+  "description": "Contactlab Pattern Library demos & example for SEND17. Edit",
+  "main": "index.js",
+  "repository": "https://github.com/contactlab/pattern-library-send17",
+  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "concurrently -k \"http-server ./dist -s -p 8081\" \"webpack -w\"",
+    "deploy": "gh-pages -d dist",
+    "postinstall": "polymer-bundler ./src/polymer.html > ./dist/polymer.html"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "gh-pages": "^1.0.0",
+    "http-server": "^0.10.0",
+    "polymer-bundler": "^2.1.0",
+    "uglify-es-webpack-plugin": "^0.0.2",
+    "wc-loader": "^1.1.4",
+    "webpack": "^3.0.0",
+    "webpack-notifier": "^1.5.0"
+  },
+  "dependencies": {
+    "contactlab-ui-components": "https://github.com/contactlab/contactlab-ui-components#8f7908f",
+    "polymer-npm-wrapper": "^1.1.0"
+  }
+}
